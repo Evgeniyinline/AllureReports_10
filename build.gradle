@@ -10,11 +10,11 @@ allure {
     report {
         version.set("2.19.0")
     }
-    adapter {
-        aspectjWeaver.set(true)
+    adapter { // отвечает за появление папочки build/allure-results
+        aspectjWeaver.set(true) //обработка аннотации @Step
         frameworks {
-            junit5 {
-                adapterVersion.set("2.19.0")
+            junit5 { //название фреймворка
+                adapterVersion.set("2.19.0") //версия интеграции фреймворка и Allure
             }
         }
     }
@@ -26,17 +26,12 @@ repositories {
 
 dependencies {
     testImplementation(
-            'org.junit.jupiter:junit-jupiter:5.9.0',
+            'org.junit.jupiter:junit-jupiter-api:5.9.0',
             'com.codeborne:selenide:6.7.2',
             'io.qameta.allure:allure-selenide:2.19.0'
-
     )
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.0'
-}
 
-
-tasks.withType(JavaCompile) {
-    options.encoding = 'UTF-8'
+    testRuntimeOnly('org.junit.jupiter:junit-jupiter-engine:5.9.0')
 }
 
 test {
