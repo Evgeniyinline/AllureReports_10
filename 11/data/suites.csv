@@ -1,4 +1,4 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Thu Aug 25 23:39:59 GMT 2022","Thu Aug 25 23:40:04 GMT 2022","4772","","allure.tests.StepsTest","","allure.tests.StepsTest","testAnnotatedStep","Проверка Issue в собственном репозитории Web Steps",""
-"passed","Thu Aug 25 23:40:04 GMT 2022","Thu Aug 25 23:40:07 GMT 2022","2567","","allure.tests.StepsTest","","allure.tests.StepsTest","testLambdaStep","Проверка Issue в собственном репозитории Lambda Steps",""
-"passed","Thu Aug 25 23:39:47 GMT 2022","Thu Aug 25 23:39:59 GMT 2022","11596","","allure.tests.StepsTest","","allure.tests.StepsTest","testIssueSearch","Проверка Issue в собственном репозитории",""
+"passed","Thu Aug 25 23:45:57 GMT 2022","Thu Aug 25 23:46:04 GMT 2022","6920","","allure.tests.StepsTest","","allure.tests.StepsTest","testIssueSearch","Проверка Issue в собственном репозитории",""
+"passed","Thu Aug 25 23:46:07 GMT 2022","Thu Aug 25 23:46:09 GMT 2022","2655","","allure.tests.StepsTest","","allure.tests.StepsTest","testLambdaStep","Проверка Issue в собственном репозитории Lambda Steps",""
+"passed","Thu Aug 25 23:46:05 GMT 2022","Thu Aug 25 23:46:07 GMT 2022","1983","","allure.tests.StepsTest","","allure.tests.StepsTest","testAnnotatedStep","Проверка Issue в собственном репозитории Web Steps",""
