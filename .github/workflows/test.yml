@@ -1,5 +1,7 @@
 name: Test
-on: [ push ]
+
+on: workflow_dispatch
+
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -25,6 +27,7 @@ jobs:
           allure_report: allure-report
           allure_history: allure-history
       - uses: peaceiris/actions-gh-pages@v2
+        if: always()
         env:
           PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PUBLISH_BRANCH: gh-pages
