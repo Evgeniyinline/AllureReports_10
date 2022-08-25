@@ -1,7 +1,5 @@
 name: Test
-
-on: workflow_dispatch
-
+on: [ push ]
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -12,6 +10,7 @@ jobs:
           distribution: 'zulu'
           java-version: '11'
       - uses: Xotabu4/selenoid-github-action@v2
+      - run: chmod +x ./gradlew
       - run: ./gradlew clean test -Dselenide.remote=http://localhost:4444/wd/hub
       - uses: actions/checkout@v2
         if: always()
@@ -27,7 +26,6 @@ jobs:
           allure_report: allure-report
           allure_history: allure-history
       - uses: peaceiris/actions-gh-pages@v2
-        if: always()
         env:
           PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PUBLISH_BRANCH: gh-pages
