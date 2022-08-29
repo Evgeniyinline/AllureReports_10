@@ -63,8 +63,9 @@ public class StepsTest extends TestBase {
     @DisplayName("Проверка Issue в собственном репозитории Web Steps")
     public void testAnnotatedStep() {
         SelenideLogger.addListener("allure", new AllureSelenide());
-        WebSteps steps = new WebSteps();
 
+
+        WebSteps steps = new WebSteps();
         steps.openMainPage();
         steps.searchForRepository(REPOSITORY);
         steps.clickOnRepository(REPOSITORY);
