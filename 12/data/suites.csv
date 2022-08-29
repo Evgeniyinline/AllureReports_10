@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon Aug 29 20:08:11 GMT 2022","Mon Aug 29 20:08:16 GMT 2022","4650","","allure.tests.StepsTest","","allure.tests.StepsTest","testLambdaStep","Проверка Issue в собственном репозитории Lambda Steps",""
+"passed","Mon Aug 29 20:07:51 GMT 2022","Mon Aug 29 20:08:02 GMT 2022","10791","","allure.tests.StepsTest","","allure.tests.StepsTest","testIssueSearch","Проверка Issue в собственном репозитории",""
+"passed","Mon Aug 29 20:08:02 GMT 2022","Mon Aug 29 20:08:11 GMT 2022","8460","","allure.tests.StepsTest","","allure.tests.StepsTest","testAnnotatedStep","Проверка Issue в собственном репозитории Web Steps",""
